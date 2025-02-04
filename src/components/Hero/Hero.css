@@ -1,0 +1,115 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /*border: 1px solid #0d00ff;*/
+  }
+  
+  .hero-text {
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .hero-button:hover {
+    background: #e68900;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto; /* Adjust the height for mobile */
+      padding: 40px 15px; /* Reduced padding */
+    }
+  
+    .hero-container {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center content */
+      text-align: center; /* Center align the text */
+      gap: 1px; /* Add gap between elements */
+      margin: 5px
+    }
+  
+    .hero-image {
+      width: 180px; /* Slightly larger image size */
+      height: 180px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.2rem; /* Adjust font size for better readability */
+      margin-bottom: 10px;
+    }
+  
+    .hero-text p {
+      font-size: 1.1rem; /* Adjust font size */
+      margin-bottom: 20px;
+    }
+  
+    .hero-button {
+      padding: 12px 18px; /* Adjust button padding */
+      font-size: 1rem; /* Adjust button font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-image {
+      width: 180px; /* Further reduce the image size */
+      height: 180px;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.8rem; /* Smaller title font */
+      margin-bottom: 5px;
+    }
+  
+    .hero-text p {
+      font-size: 0.95rem; /* Smaller paragraph font */
+      margin-bottom: 15px;
+    }
+  
+    .hero-button {
+      padding: 10px 15px; /* Further adjust button padding */
+      font-size: 0.9rem; /* Further adjust button font size */
+    }
+  }
+  

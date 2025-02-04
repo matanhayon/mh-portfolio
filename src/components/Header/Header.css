@@ -1,0 +1,67 @@
+/* Modern Header with Flexbox */
+.header {
+    background-color: #232444; /* Darker background for a modern look */
+    color: white;
+    padding: 1.5rem 2rem; /* Adjusted padding for more space */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+  }
+  
+  /* Adjusting h1 for better typography */
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  /* Navigation container */
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space out the nav items */
+  }
+  
+  /* Navigation list item */
+  .header nav ul li {
+    display: inline-block;
+  }
+  
+  /* Styling for nav links */
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    position: relative; /* For underline effect */
+  }
+  
+  /* Modern hover effect: underline on hover */
+  .header nav ul li a:hover {
+    color: #ff9800; /* Highlight color */
+  }
+  
+  /* Underline effect */
+  .header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Distance between text and underline */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff9800;
+    transition: all 0.3s ease;
+  }
+  
+  .header nav ul li a:hover::after {
+    width: 100%; /* Expand the underline */
+  }
+  

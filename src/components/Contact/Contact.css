@@ -1,0 +1,64 @@
+.contact-section {
+  background: #f4f4f9; /* Light background color */
+  padding: 60px 30px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column; /* Stacks the items vertically */
+  gap: 20px; /* Adds space between items */
+  align-items: center; /* Centers the items horizontally */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  background-color: #1a20db;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Makes the buttons take up the full width of their container */
+  max-width: 250px; /* Set a maximum width to prevent them from getting too large */
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+}
+
+.contact-item:hover {
+  background-color: #00bfff; /* Light pink color on hover */
+  transform: translateY(-5px); /* Elevate the icon on hover */
+}
+
+.contact-item span {
+  font-size: 1.1rem;
+}
+
+.contact-item:hover span {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+    width: 80%; /* Allow contact items to take more space on small screens */
+  }
+}

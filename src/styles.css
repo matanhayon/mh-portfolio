@@ -1,0 +1,94 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  
+  .section {
+    padding: 50px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for cards */
+    margin: 10px;
+    text-align: left; /* Align text to the left for better readability */
+  }
+  
+  .project-card img {
+    width: 100%; /* Ensures the image stretches to the full card width */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: contain; /* Ensures the whole image is visible without being cropped */
+    border-radius: 8px;
+    background-color: white; /* Adds a background in case of transparent images */
+  }
+  
+  
+  
+  .project-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .project-list {
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-list {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center the cards */
+    }
+  
+    .project-card {
+      width: 90%; /* Make cards take more space on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-card {
+      width: 100%; /* Make cards full width on very small screens */
+    }
+
+  
+    
+  }
+  

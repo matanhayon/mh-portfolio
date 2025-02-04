@@ -1,0 +1,35 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bffad;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem; /* Adjust size of the icon */
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px; /* Adjust the minimum width to fit the icon */
+    height: 50px; /* Set a fixed height for better alignment */
+    text-align: center;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Lift effect */
+  }
+  
+  .back-to-top:active {
+    transform: translateY(0); /* Return to original position on click */
+  }
+  
+  .back-to-top svg {
+    margin: 0; /* Remove any margin around the icon */
+    font-size: 1.3rem; /* Adjust icon size */
+  }
+  
